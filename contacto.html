@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">    
+    <link rel="stylesheet" type="text/css" href="css/estilosContacto.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">    
+        <div class="img-cabecera">
+            <img src="img/logo.png" alt="">
+        </div>
+        <!-- Hamburger button-->
+        <div class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+        </div>
+        <!--NAVBAR-->
+        <nav class="menuppal">
+            <ul class="nav" type="none">
+                <li><a href="index.html">Inicio</a>
+                <li><a>Cursos</a>
+                    <ul class="cursos" type="none">
+                        <li><a href="paramedico.html">Paramedico</a></li>
+                        <li><a href="secreSalud.html">Sec en Salud</a></li>
+                        <li><a href="teraAlter.html">Terap Alternativas</a></li>
+                        <li><a href="auxEnfermeria.html">Aux Enfermería</a></li>                        
+                        <li><a href="auxFarmacia.html">Aux Farmacia</a></li>
+                        <li><a href="auxEmerMedi.html">Aux Emerg Medicas</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>                
+            </ul>
+        </nav>
+    </header>   
+    <main class="flex-container">
+        <!--FORMULARIO-->
+        <form class="formulario" id="formulario" action="https://formspree.io/f/mknezpqo" method="POST">
+            <!-- Grupo: Nombre y Apellido -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre y Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe" onchange="toggleButton()">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre solo puede poseer letras aA-zZ</p>
+            </div>
+            <!-- Grupo: Correo Electronico -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" onchange="toggleButton()">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El correo debe tener formato xxx@xxx.xxx</p>
+            </div>
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="XXX XXXXXXX" onchange="toggleButton()">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un numero valido...</p>
+            </div>
+            <!-- Grupo: Mensaje -->
+            <div class="formulario__grupo" id="grupo__mensaje">
+                <label for="mensaje" class="formulario__label">Consulta: </label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Escriba Aqui" onchange="toggleButton()">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un mensaje</p>
+            </div>
+            <div class="uno-uno">    
+                <fieldset class="uno-uno">
+                    <legend class="formulario__label">¿Cuál es el curso que le interesa?</legend>
+                    <select name="curso" class="formulario__input">
+                        <option>Paramedico</option>
+                        <option>Secretariado en salud</option>
+                        <option>Terapias Alternativas</option>
+                        <option>Auxiliar de Enfermería</option>
+                        <option>Auxiliar en Farmacia</option>
+                        <option>Auxiliar Emergencias Médicas</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="fieldset">
+                <fieldset class="uno">
+                    <legend class="formulario__label">¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="radio-mensaje">
+                        <input type="radio" name="contacto" value="email" id="radio-email"><a>Email</a>
+                    </label>
+                    <label for="radio-telefono">
+                        <input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono
+                    </label>
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp
+                    </label>
+                </fieldset>
+                <fieldset class="dos"  name="horario">
+                    <legend class="formulario__label">¿En cuál horario le gustaría realizar el curso?</legend>
+                    <select name="horario" class="formulario__input">
+                        <option name="horario">Mañana</option>
+                        <option name="horario">Tarde</option>
+                        <option name="horario">Noche</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button id="submitButton" type="submit" class="formulario__btn" disabled>Enviar</button> 
+            </div>
+        </form>
+    </main>
+    <!--FOOTER--> 
+    <footer>
+        <div class="container-footer">
+            <nav class="menu-footer">
+                <ul class="nav-footer" type="none">
+                    <li><a href="index.html">Inicio</a>                
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                
+                </ul>
+            </nav>           
+            <div class="enlaces-media">
+                <p>----------- Contactanos -----------</p>
+                <div class="cajitas">
+                    <a href="https://web.whatsapp.com/">
+                        <box-icon class="boxicon" name='whatsapp' type='logo' animation='burst' color='#33ef12' ></box-icon>
+                    </a>
+                    </div>
+                <div class="cajitas">
+                    <a href="https://www.instagram.com">
+                        <box-icon class="boxicon" name='instagram-alt' type='logo' animation='burst' color='#ff5959' ></box-icon>
+                    </a>
+                </div>
+                <div class="cajitas">
+                    <a href="https://www.facebook.com">
+                        <box-icon class="boxicon" name='facebook-square' type='logo' animation='burst' color='#46b7fb' ></box-icon>
+                    </a>
+                </div>      
+            </div>            
+            <p class="copyright">&copy Copyright Salus - 2022</p> 
+        </div>
+
+        <div class="ubication">
+            <div class="container-sede">   
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.5608413046857!2d-64.18989688187536!3d-31.413772766270718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329878bda85633%3A0xd5a1906a876ba3e!2sComplejo%20Cinerama!5e0!3m2!1ses!2sar!4v1666034622294!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section>
+                <p>Direccion: Av.Colon 345 - Cordoba Capital </p>
+                <p>Telefono: 3512525252</p>  
+                <p>E-mail: salus@gmail.com</p>
+            </section>
+        </div>        
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/logica.js"></script> 
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>

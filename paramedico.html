@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/estilosCursos.css">        
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>Paramedico</title>
+</head>
+<body>
+    <header class="header">    
+        <div class="img-cabecera">
+            <img src="img/logo.png" alt="">        
+        </div>
+        <!-- Hamburger button-->
+        <div class="hamburger">
+            <div class="_layer -top"></div>
+            <div class="_layer -mid"></div>
+            <div class="_layer -bottom"></div>
+        </div>
+        <!--NAVBAR-->
+        <nav class="menuppal">
+            <ul class="nav" type="none">
+                <li><a href="index.html">Inicio</a>
+                <li><a>Cursos</a>
+                    <ul class="cursos" type="none">
+                        <li><a href="paramedico.html">Paramedico</a></li>
+                        <li><a href="secreSalud.html">Sec en Salud</a></li>
+                        <li><a href="teraAlter.html">Terap Alternativas</a></li>
+                        <li><a href="auxEnfermeria.html">Aux Enfermería</a></li>                        
+                        <li><a href="auxFarmacia.html">Aux Farmacia</a></li>
+                        <li><a href="auxEmerMedi.html">Aux Emerg Medicas</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>                
+            </ul>
+        </nav>
+    </header> 
+    <div class="container-cursos">
+        <!-- CARROUSEL-->
+        <section class="sec-cabecera">
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" 
+                        name="slide" aria-hidden="true" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <img src="img/insAbiertas11.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" 
+                        name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="img/insAbiertas12.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" 
+                        name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="img/insAbiertas13.jpg">
+                    </div>
+                    <label for="slide-3" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-1" class="slide-control next control-3">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="sec-logo">            
+        </section>
+        <!--SECCIONES CADA CURSO-->
+        <section class="sec1">
+            <div class="titulo-cabecera">
+                <h1>Paramedico</h1>               
+            </div>        
+            <h2>Objetivos:</h2> 
+            <p>La función y la asistencia del Paramédico son esenciales en la mayoría de los casos para asegurar la
+                supervivencia de los pacientes en situaciones de vida o muerte. Por lo tanto, se necesita de una amplia formación teórica y
+                práctica para evaluar y actuar con rapidez y efectividad en situaciones críticas.</p>
+            <div class="descargas">
+                <a class="programa" href="../img/programas/progParamedico00.jpeg" download>Descargar Programa (parte1)</a>
+                <a class="programa" href="../img/programas/progParamedico01.jpeg" download>Descargar Programa (parte2)</a>
+            </div>
+        </section>  
+        <section class="sec2">
+            <div class="titulo-curso">
+                <h1>Modulo nº1: CENTRO DE RADIO OPERACIÓN:</h1>
+            </div>
+            <p>Rol del radio operador, colorines, protocolo de despacho, tiempos radiales, hora de disponibilidad. </p>
+            <div class="titulo-curso">
+                <h1>Modulo nº2: FARMACOLOGIA:</h1>
+            </div>
+            <p>Vías de administración, formas farmacéuticas, farmacodinamia y farmacocinetica, Fluidoterapia.</p>
+            <div class="titulo-curso">
+                <h1>Modulo nº3: TERAPÉUTICA ANALGÉSICA Y ANTIINFLAMATORIA:</h1>
+            </div>
+            <p>Indicaciones, contraindicaciones, reacciones adversas, nombres farmacológicos y nombres comerciales de AINES,
+                corticoides, analgésicos opeáceos.</p>
+        </section>
+        <section class="sec3">            
+            <div class="titulo-curso">
+                <h1>Modulo nº4: TRAUMA:</h1>
+            </div>
+            <p>Estrella de la vida y su significado. La Hora de oro y los 10 minutos de platino. Las tres etapas del paciente
+                politraumatizado. Evaluación primaria: A-B-C-D-E.</p>
+            <div class="titulo-curso">
+                <h1>Modulo nº5:  SALUD MENTA:L</h1>
+            </div>
+            <p>Trastornos mentales. Acción terapéutica, indicaciones, contraindicaciones, reacciones adversas, nombres
+                farmacológicos y nombres comerciales de ansiolíticos, hipnóticos, anti parkinsonianos, antiepilépticos, antipsicóticos,
+                antidepresivos, eutimizantes, drogodependencias.</p>
+        </section>
+        <section class="sec4">            
+            <div class="titulo-curso">
+                <h1>Modulo nº6: TEM DE ALTO RIESGO:</h1>
+            </div>
+            <p>Ventilación y respiración. Hipoxia, tipos. Manejo avanzado de la vía respiratoria: Elementos de uso interno y de uso
+                externo: Clasificación, descripción, indicaciones, contraindicaciones y técnica de administración.
+                Neumotórax y hemotórax: Descripción; tipos; sintomatología; diagnóstico y tratamiento. Drenaje pleural.
+                SOPORTE VITAL AVANZADO: Definicion, RCP avanzado. Desfibrilacion. Tipos de desfibriladores. Algoritmos. Fármacos
+                de emergencia.</p>
+                <div class="titulo-curso">
+                    <h1>Modulo nº7: MEDICINA DEL DESASTRE O CATASTROFE:</h1>   
+                </div>            
+                <p>Clasificacion: desastres y catastrofes. Medicina del desastre o catastrofe. Evaluacion inicial del paciente. Organizacion
+                    de la zona del trabajo. TRIERE (TRIAGE). Descripcion. Colorines. Métodos mas utilizados: Método SHORT. Método START. Método JUMP
+                    START.</p>         
+        </section>
+        <section class="sec5">
+            <div class="titulo-curso">
+                <h1>Modulo nº8: INTOXICACIONES</h1>
+            </div>
+            <p>Materiales o mercancías peligrosas: Clasificación. Etiquetas de riesgo primario y riesgo secundario. Sistema de
+                identificación. Nemotecnia CRETIB. Accidentes con materiales peligrosos, escenarios hostiles, riesgo atmosférico.
+                Intoxicaciones: Definición. Tipos de intoxicaciones y tratamiento para las distintas situaciones.
+                Arácnidos y ofidios.</p>
+                <div class="titulo-curso">
+                    <h1>Modulo nº9: TRAUMA</h1>
+                </div>
+                <p>Lesión: Definición. Tipos de trauma. Formas de energía. Energía descontrolada. Triángulo de la enfermedad.
+                    Manejo inicial del trauma: Cinemática del trauma. Lesiones por cambio de velocidad. Lesiones por compresión.
+                    Colisiones de vehículos motorizados. Consideraciones sobre la etapa prehospitalaria.
+                    Manejo prehospitalario: Fisiopatologia. Evaluación primaria y secundaria. Donde y cómo estacionar el movil. Contacto
+                    con la víctima. Estabilización del vehiculo (introduccion del trabajo del bombero).</p>    
+        </section>
+        <section class="sec6">
+            <div class="titulo-curso">
+                <h1>Modulo nº10: ASPECTOS LEGALES:.</h1>
+            </div>
+            <p>Lesión y daño. Artículos 89, 90, 91, 94 del capítulo II del código penal. Como describir una herida.
+                Asfixia. Herida por arma de fuego. Herida por arma blanca. Atropello. Muerte.</p>
+            <div class="titulo-curso">
+                <h1>Otras materias en el programa:</h1>
+            </div>
+            <p>-Nutrición. -Pediatría. -Obstetricia.</p>
+            <div class="titulo-curso">
+                <h1>PRESENTACION DE TRABAJO FINAL. Tesis</h1>
+            </div>
+            <h2>Duración</h2>
+            <p>Esta etapa tiene una duración de 10 meses, clases virtuales teóricas con contenido didáctico.
+                El curso completo dura 20 meses. Los primeros 10 meses corresponden al auxiliar de emergencias medicas donde
+                abarca el soporte vital basico.</p>
+        </section>
+        <section class="sec7">
+            <div class="titulo-curso">
+                <h1>Perfil del egresado</h1>
+            </div>
+            <p>Al finalizar el curso, el alumno que adopte e integre los conocimientos del mismo, podrá desarrollase en las competencias
+                técnicas necesarias para asistir adecuadamente en situaciones de trauma, urgencias y emergencias prehospitalarias individuales
+                y colectivos. De la misma manera desarrollará la capacidad de observación, análisis y evaluación crítica para identificar, evaluar,
+                intervenir y resolver los problemas que se presenten de manera rápida y oportuna. También podrá ejecutar procedimientos
+                basados en normas y protocolos nacionales o internacionales con aplicación local. </p>   
+        </section> 
+    </div> 
+    <!--FOOTER-->    
+    <footer>
+        <div class="container-footer">
+            <nav class="menu-footer">
+                <ul class="nav-footer" type="none">
+                    <li><a href="index.html">Inicio</a>                
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                
+                </ul>
+            </nav>           
+            <div class="enlaces-media">
+                <p>----------- Contactanos -----------</p>
+                <div class="cajitas">
+                    <a href="https://web.whatsapp.com/">
+                        <box-icon class="boxicon" name='whatsapp' type='logo' animation='burst' color='#33ef12' ></box-icon>
+                    </a>
+                    </div>
+                <div class="cajitas">
+                    <a href="https://www.instagram.com">
+                        <box-icon class="boxicon" name='instagram-alt' type='logo' animation='burst' color='#ff5959' ></box-icon>
+                    </a>
+                </div>
+                <div class="cajitas">
+                    <a href="https://www.facebook.com">
+                        <box-icon class="boxicon" name='facebook-square' type='logo' animation='burst' color='#46b7fb' ></box-icon>
+                    </a>
+                </div>      
+            </div>            
+            <p class="copyright">&copy Copyright Salus - 2022</p> 
+        </div>
+        <div class="ubication">
+            <div class="container-sede">   
+                <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.5608413046857!2d-64.18989688187536!3d-31.413772766270718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329878bda85633%3A0xd5a1906a876ba3e!2sComplejo%20Cinerama!5e0!3m2!1ses!2sar!4v1666034622294!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section>
+                <p>Direccion: Av.Colon 345 - Cordoba Capital </p>
+                <p>Telefono: 3512525252</p>  
+                <p>E-mail: salus@gmail.com</p>
+            </section>
+        </div>        
+    </footer>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/logica.js"></script>
+</body>
+</html>

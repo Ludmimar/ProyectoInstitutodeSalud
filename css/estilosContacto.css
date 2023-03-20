@@ -1,0 +1,139 @@
+/********************************CONTACTO **********************************************/
+.cursos{
+    z-index: 1;
+}
+
+.flex-container {
+	height: 60vw;
+	margin: auto;
+	padding: 5%;  
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;    
+}
+
+.formulario__label {
+	display: block;
+	padding: 10px;
+    font-size: 2vw;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative; 
+}
+
+.formulario__input {
+	width: 90%;
+    font-size: 1.5vw;
+	background: #fff;
+	border: 3px solid transparent;
+    border-color: #000;
+	border-radius: 10px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 1.3vw;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100; 
+	font-size: 1.3vw;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__btn {
+	height: 5vw;
+	width:20vw;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+    border-radius:10px;
+}
+
+.formulario__btn:hover {
+	box-shadow: 10px 0px 50px rgba(163,163,163, 1);
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+.fieldset {
+    display: grid;   
+    border-width: 2px;
+    border-color: rgb(192, 192, 192);    
+}
+
+.uno, .dos{
+    padding: 10px 20px 15px 20px;
+}
+
+.uno-uno{
+    display:grid,
+}
+
+@media screen and (max-width:850px ) {
+    .flex-container {
+        height: 100vw;
+        margin: auto;
+        padding: 5%;  
+    }
+}
